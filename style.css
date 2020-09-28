@@ -1,0 +1,331 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+:root{
+    --primary-font:'Nanum Gothic', sans-serif;
+    --secondary-font: 'Cinzel', serif;
+}
+/* start top */
+.top{
+    background-color:rgb(254, 82, 91);
+    width:100%;
+    height:3rem;
+    text-align: center;
+    padding-top: .4rem;
+}
+.top a{
+    color: white;
+    text-decoration: none;
+}
+/* end top */
+
+/* start navbar */
+nav{
+    background-color: rgb(244, 248, 251);
+    margin-top: 3rem;
+}
+nav .dropdown .dropdown-menu{
+    border-radius: 20px;
+}
+nav .dropdown .dropdown-menu .dropdown-item,
+nav .nav-item .nav-link{
+    background: linear-gradient(to right, #f32170, 
+                    #ff6b08, #cf23cf, #eedd44); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+nav .navbar-brand{
+    font-size: 30px;
+    color: tomato;
+}
+/* End navbar */
+
+/* start cover */
+.cover{
+    background-image:linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.2)), url(./img/cover/little-girls-dress-rebenok.jpg);
+    text-align: center;
+    color: rgb(255, 254, 254);
+    width: 100vw;
+    background-position: center;
+    background-repeat: inherit;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 6.5rem;
+}
+.cover .headline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cover h1{
+    font-size: 60px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+
+.cover h3{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+/* end cover */
+
+/* start time */
+.time{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.time h1{
+    margin-bottom: 4rem;
+}
+.time .time-table{
+    background-image: linear-gradient(to left, #f32170, #cf23cf);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 9rem;
+    text-align: center;
+    height: 10rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #f32170,
+                1px 1px 1px 1px #f32170,
+                1px 1px 1px 1px #f32170,
+                1px 1px 1px 1px #f32170;
+    margin: auto; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;           
+}
+.time .time-table .number{
+    color: rgb(233, 171, 171);
+    font-size: 3rem;
+}
+.time-table .day{
+    color: white;
+}
+/* end time */
+
+/* start product */
+.product .product-item{
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 133px;
+    width: 200px;
+}
+.product .row .product-item .overlay{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.product .row .product-item .overlay .text{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    color: dodgerblue;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+}
+.product .row .product-item:hover .overlay .text{
+    opacity: 1;
+}
+.product .row .product-item:hover img{
+    opacity: 0.3;
+}
+.product .product-item .discount{
+    position: absolute;
+    background-color: rgb(254, 82, 91);
+    top: 0;
+    padding:0 4px;
+}
+/* end product */
+
+/* start purchase section */
+.purchase{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to right, rgb(254, 160, 164), rgb(22, 161, 108));
+    padding: 4rem;
+    overflow: hidden;
+}
+.purchase .container{
+    text-align: center;
+}
+.purchase .submit{
+    background-color: white;
+    padding: .5rem 2rem;
+    padding-bottom: .6rem;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: background-color 0.5s;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+.purchase .submit:hover{
+    box-sizing: border-box;
+    background-color: rgb(214, 211, 211);
+    box-shadow: 1px 2px 10px 10px rgb(0,0,0,0.1),
+                1px 2px 4px 0px rgb(0,0,0,0.1),
+                1px 2px 4px 0px rgb(0,0,0,0.1),
+                1px 2px 10px 10px rgb(0,0,0,0.1);
+}
+.purchase .submit:hover,
+.purchase .submit:focus{
+    outline: none;
+}
+.purchase .normal{
+    padding: 0.5rem 1rem;
+    padding-bottom: 0.6rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background: none;
+    transition: background .5s;
+    transition: color 0.6s;
+    text-transform: uppercase;
+}
+.purchase .normal:hover{
+    background: white;
+    color: black;
+    box-shadow: 1px 2px 10px 10px rgb(0,0,0,0.1),
+                1px 2px 4px 0px rgb(0,0,0,0.1),
+                1px 2px 4px 0px rgb(0,0,0,0.1),
+                1px 2px 10px 10px rgb(0,0,0,0.1);
+}
+.purchase .normal:hover,
+.purchase .normal:focus{
+    outline: none;
+}
+.purchase h1{
+    color: white;
+    font-family: var(--primary-font);
+}
+.purchase h4{
+    color: white;
+    font-family: var(--secondary-font);
+    margin-bottom: 2rem;
+}
+/* end purchase section */
+
+/* start payment section */
+.payment{
+    margin-bottom: 4rem;
+}
+.payment h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+.payment .company img{
+    width: 100px;
+}
+.payment .company{
+    width: 100px;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+}
+/* end payment section */
+
+/* start footer  */
+footer{
+    padding: 2rem;
+    color: white;
+    background: rgb(35, 35, 35);
+    text-align: center;
+}
+footer h1{
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+footer h5{
+    font-family: var(--secondary-font);
+    font-weight: 200;
+}
+footer .address .website{
+    font-size: 25px;
+}
+footer .address .website i{
+    padding: 0.7rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    opacity: .3;
+    transition: opacity 0.5s;
+    color: white;
+}
+footer .address .website i:hover{
+    opacity: 1;
+}
+footer .row .social{
+    margin: auto;
+}
+footer .row .social i{
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem;
+    margin-left:0.8rem;
+    background-color: tomato;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+footer .row .social i:hover{
+    opacity: 1;
+}
+footer .row .social .secion{
+    margin: auto;
+}
+footer .row .social .secion .secion-name{
+    margin: auto;
+}
+footer .row .end .link a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+footer .row .end .link a:hover{
+    color: rgb(128, 128, 128);
+}
+footer .row .end .search{
+    padding: 1rem;
+}
+footer .row .end .search input{
+    padding: .1rem;
+    border-radius: 10px;
+    border: white;
+}
+footer .row .end .search input:hover,
+footer .row .end .search input:focus{
+    outline: none;
+}
+footer .row .end .search button{
+    padding: 0 1rem;
+    padding-bottom: 0.1rem;
+    border-radius: 10px;
+    border: white;
+    margin-top: 0.8rem;
+}
+footer .row .end .search button:hover,
+footer .row .end .search button:focus{
+    background-color: rgb(196, 196, 196);
+    outline: none;
+}
+footer .row .footer-payment{
+    margin: auto;
+    width: 90px;
+}
+footer .row .footer-payment img{
+    width: 60px;
+    margin-top: 0.7rem;
+}
+/* end footer  */
+
+
+
